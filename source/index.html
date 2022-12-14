@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Седона</title>
 </head>
 
@@ -19,22 +20,22 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
-            <a href="#">
+            <a class="site-list__link" href="#">
               Главная
             </a>
           </li>
           <li class="site-list__item">
-            <a href="catalog.html">
+            <a class="site-list__link" href="catalog.html">
               Фото и Видео
             </a>
           </li>
           <li class="site-list__item">
-            <a href="form.html">
+            <a class="site-list__link" href="form.html">
               Форма Отзыва
             </a>
           </li>
           <li class="site-list__item">
-            <a href="#">
+            <a class="site-list__link" href="#">
               HTML Academy
             </a>
           </li>
@@ -45,6 +46,8 @@
   <main class="main-container">
     <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
     <section class="hero">
+      <img class="hero__image" src="../source/img/main-index/hero-sedona.png" width="320" height="389"
+        alt="Седона.">
       <div class="hero__wrapper">
         <h2 class="hero__title">Седона — небольшой городок в Аризоне, Заслуживающий большего!</h2>
         <p class="hero__description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
@@ -56,56 +59,60 @@
         <ul class="advantages__list">
           <li class="advantages__item">
             <div class="advantage">
-              <h3 class="advantages__title">Настоящий городок</h3>
-              <p class="advantages__description">— №1 —</p>
-              <p class="advantages__description">Мы делаем свою работу быстро! Два часа пролетят незаметно и вы —
+              <h3 class="advantage__title">Настоящий городок</h3>
+              <p class="advantage__description">— №1 —</p>
+              <p class="advantage__description">Мы делаем свою работу быстро! Два часа пролетят незаметно и вы —
                 счастливый обладатель стильной стрижки-минутки.</p>
+                <img class="advantage__image" src="../source/img/main-index/mountain-house.png" width="520" height="260"
+        alt="Домик на фоне гор.">
             </div>
           </li>
           <li class="advantages__item">
             <div class="advantage advantage--icon">
-              <h3 class="advantages__title">Жилье</h3>
-              <p class="advantages__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+              <h3 class="advantage__title">Жилье</h3>
+              <p class="advantage__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
             </div>
           </li>
           <li class="advantages__item">
             <div class="advantage advantage--icon">
-              <h3 class="advantages__title">Еда</h3>
-              <p class="advantages__description">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
+              <h3 class="advantage__title">Еда</h3>
+              <p class="advantage__text">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
             </div>
           </li>
           <li class="advantages__item">
             <div class="advantage advantage--icon">
-              <h3 class="advantages__title">Сувениры</h3>
-              <p class="advantages__description">Не только китайского, но и местного производства!</p>
+              <h3 class="advantage__title">Сувениры</h3>
+              <p class="advantage__text">Не только китайского, но и местного производства!</p>
             </div>
           </li>
           <li class="advantages__item">
             <div class="advantage">
-              <h3 class="advantages__title">Там есть мост дьявола</h3>
-              <p class="advantages__description">— №2 —</p>
-              <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+              <h3 class="advantage__title">Там есть мост дьявола</h3>
+              <p class="advantage__description">— №2 —</p>
+              <p class="advantage__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+              <img class="advantage__image" src="../source/img/main-index/bridge.png" width="520" height="260"
+        alt="Мост дьявола.">
             </div>
           </li>
           <li class="advantages__item">
             <div class="advantage advantage--without-image">
-              <h3 class="advantages__title">Небольшая площадь</h3>
-              <p class="advantages__description">— №3 —</p>
-              <p class="advantages__description">Все интересные места находятся очень близко</p>
+              <h3 class="advantage__title">Небольшая площадь</h3>
+              <p class="advantage__text">— №3 —</p>
+              <p class="advantage__text">Все интересные места находятся очень близко</p>
             </div>
           </li>
           <li class="advantages__item">
             <div class="advantage advantage--without-image">
-              <h3 class="advantages__title">Красивая дорога</h3>
-              <p class="advantages__description">— №4 —</p>
-              <p class="advantages__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+              <h3 class="advantage__title">Красивая дорога</h3>
+              <p class="advantage__text">— №4 —</p>
+              <p class="advantage__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </div>
           </li>
           <li class="advantages__item">
             <div class="advantage advantage--without-image">
-              <h3 class="advantages__title">Мало туристов</h3>
-              <p class="advantages__description">— №5 —</p>
-              <p class="advantages__description">Большинство едут в гранд каньон и толпится там</p>
+              <h3 class="advantage__title">Мало туристов</h3>
+              <p class="advantage__text">— №5 —</p>
+              <p class="advantage__text">Большинство едут в гранд каньон и толпится там</p>
             </div>
           </li>
         </ul>
