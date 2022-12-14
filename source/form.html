@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Седона</title>
 </head>
 
@@ -19,22 +20,22 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
-            <a href="index.html">
+            <a class="site-list__link" href="index.html">
               Главная
             </a>
           </li>
           <li class="site-list__item">
-            <a href="catalog.html">
+            <a class="site-list__link" href="catalog.html">
               Фото и Видео
             </a>
           </li>
           <li class="site-list__item">
-            <a href="#">
+            <a class="site-list__link" href="#">
               Форма Отзыва
             </a>
           </li>
           <li class="site-list__item">
-            <a href="#">
+            <a class="site-list__link" href="#">
               HTML Academy
             </a>
           </li>
@@ -51,8 +52,8 @@
     </div>
     <section class="main-inner__feedback feedback">
       <div class="feedback__wrapper">
-        <h2 class="feedback__title">Представтесь:</h2>
         <form class="feedback__form" action="https://echo.htmlacademy.ru/" method="post">
+          <h2 class="feedback__title">Представтесь:</h2>
           <fieldset class="feedback__form-grop">
             <label class="feedback__form-label" for="name">Имя*:</label>
             <input class="feedback__field" type="text" id="name" name="name" value="Петр">
@@ -61,17 +62,17 @@
             <label class="feedback__form-label" for="patronymic">Отчество:</label>
             <input class="feedback__field" type="text" id="patronymic" name="patronymic" value="Викторович">
           </fieldset>
-          <div class="feedback__wrapper contacts">
-            <h2 class="contacts__title">Контактная Информация</h2>
-            <fieldset class="contacts__form-telephone">
-              <label class="contacts__form-label" for="telephone">Контактный телефон*:</label>
-              <input class="contacts__field" placeholder="Введите телефон" type="text" id="telephone" name="telephone">
-              <button class="contacts__button" type="button"> <span
-                  class="contacts__telephone visually-hidden">Телефон</span> </button>
-              <label class="contacts__form-label" for="email">Электронная почта*:</label>
-              <input class="contacts__field" placeholder="Введите e-mail" type="email" id="email" name="email">
-              <button class="contacts__button" type="button"> <span
-                  class=" contacts__email visually-hidden">e-mail</span> </button>
+          <div class="feedback__wrapper contacts-info">
+            <h2 class="contacts-info__title">Контактная Информация</h2>
+            <fieldset class="contacts-info__form-telephone">
+              <label class="contacts-info__form-label" for="telephone">Контактный телефон*:</label>
+              <input class="contacts-info__field" placeholder="Введите телефон" type="text" id="telephone" name="telephone">
+              <button class="contacts-info__button" type="button"> <span
+                  class="contacts-info__telephone visually-hidden">Телефон</span> </button>
+              <label class="contacts-info__form-label" for="email">Электронная почта*:</label>
+              <input class="contacts-info__field" placeholder="Введите e-mail" type="email" id="email" name="email">
+              <button class="contacts-info__button" type="button"> <span
+                  class=" contacts-info__email visually-hidden">e-mail</span> </button>
             </fieldset>
           </div>
           <div class="feedback__wrapper radio">
