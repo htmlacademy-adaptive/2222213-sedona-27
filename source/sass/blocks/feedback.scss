@@ -1,3 +1,44 @@
 .feedback__form {
   margin: 0;
+  padding: 0;
+}
+
+.feedback__form-grop {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 128px;
+  }
+}
+
+.contacts-info__form-telephone {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.feedback__wrap {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
