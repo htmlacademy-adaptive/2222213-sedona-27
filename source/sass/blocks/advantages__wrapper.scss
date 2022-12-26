@@ -1,10 +1,26 @@
 .advantages__list {
+  margin: 0;
   list-style-type: none;
+  padding: 0;
 }
 
 .advantage {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 211px;
   background-color: #81b3d2;
   color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    height: 260px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 260px;
+  }
 }
 
 .advantage--icon {
@@ -15,4 +31,36 @@
 .advantage--without-image {
   background-color: #eeeeee;
   color: #000000;
+}
+
+.advantages__wrap {
+  @media (min-width: $tablet-width) {
+    height: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.advantages__item--flex {
+  @media (min-width: $tablet-width) {
+    height: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }

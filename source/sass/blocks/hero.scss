@@ -1,5 +1,30 @@
+.hero {
+  margin: 0;
+  padding: 0;
+  height: 631px;
+
+  @media (min-width: $tablet-width) {
+    height: 724px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 724px;
+  }
+}
+
 .hero__image {
-  background-image: url("/source/img/main-index/welcome-sedona.png");
-  background-position: center;
-  background-repeat: no-repeat;
+  display: block;
+  margin: 0 auto;
+  padding: 90px 19px 85px 19px;
+  background-image: url("/source/img/main-index/hero-bottom.svg"), url("/source/img/main-index/hero-sedona.png");
+  background-position: center bottom, center;
+  background-repeat: no-repeat, no-repeat;
+
+  @media (min-width: $tablet-width) {
+
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
 }

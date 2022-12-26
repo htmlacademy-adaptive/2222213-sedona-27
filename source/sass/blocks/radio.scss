@@ -1,5 +1,39 @@
+.radio {
+  @media (min-width: $tablet-width) {
+    width: 648px;
+    margin: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 960px;
+    margin: auto;
+  }
+}
+
 .radio__list {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 575px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 960px;
+  }
+}
+
+.radio__item {
+  padding-right: 49px;
 }
 
 .radio__title {
