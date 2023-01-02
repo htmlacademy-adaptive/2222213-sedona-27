@@ -6,9 +6,41 @@
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
+  margin: 0;
+  padding-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    font-family: "PT Sans", sans-serif;
+    color: #000000;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0 10px 35px 10px;
+
+    .hero__title-br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    font-family: "PT Sans", sans-serif;
+    color: #000000;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+
+    .hero__title-br {
+      display: none;
+    }
+  }
 }
 
 .hero__description {
+  margin: 0;
   font-family: "PT Sans", sans-serif;
   color: #333333;
   font-weight: 400;
@@ -16,4 +48,29 @@
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-family: "PT Sans", sans-serif;
+    color: #333333;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    font-family: "PT Sans", sans-serif;
+    color: #333333;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+  }
 }
+

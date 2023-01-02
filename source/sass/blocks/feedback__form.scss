@@ -1,17 +1,27 @@
-.feedback__form-grop {
-  border: none;
-}
-
 .feedback__title {
+  margin: 0;
   color: #000000;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+  text-align: center;
   text-transform: uppercase;
+  padding-bottom: 20px;
+  padding-left: 75px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 100px;
+  }
 }
 
 .feedback__form-label {
+  margin: 0;
+  padding-left: 20px;
   color: #333333;
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
@@ -21,7 +31,8 @@
 }
 
 .feedback__field {
-  padding: 16px;
+  margin-bottom: 16px;
+  padding: 16px 55px 16px 16px;
   background-color: #f2f2f2;
   color: #000000;
   font-family: "PT Sans", sans-serif;
@@ -29,4 +40,9 @@
   font-size: 18px;
   line-height: 26px;
   border: none;
+
+  @media (min-width: $desktop-width) {
+    width: 430px;
+    padding-right: 0;
+  }
 }

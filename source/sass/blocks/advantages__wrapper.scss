@@ -4,63 +4,168 @@
   padding: 0;
 }
 
-.advantage {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  height: 211px;
-  background-color: #81b3d2;
-  color: #ffffff;
-
+.advantages__wrap-city {
   @media (min-width: $tablet-width) {
-    height: 260px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
   }
 
   @media (min-width: $desktop-width) {
-    height: 260px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+}
+
+.advantage {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+
+.advantage__image {
+  background-image: url("/source/img/main-index/top-hause.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 54px 18px 27px 18px;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("/source/img/main-index/tablet-hause.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 52px 33px 20px 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 52px 50px 37px 50px;
   }
 }
 
 .advantage--icon {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
   background-color: #ffffff;
   color: #000000;
+  margin-left: 65px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 60px 33px 60px 33px;
+  }
 }
 
 .advantage--without-image {
   background-color: #eeeeee;
   color: #000000;
-}
+  width: 100%;
+  margin: 0;
 
-.advantages__wrap {
   @media (min-width: $tablet-width) {
-    height: 260px;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 52px 27px 52px 27px;
   }
 
   @media (min-width: $desktop-width) {
-    height: 260px;
+    padding: 63px 50px 41px 50px;
+  }
+}
+
+.advantage--without-image-botomm {
+  background-color: #eeeeee;
+  color: #000000;
+  width: 100%;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
     display: flex;
     justify-content: center;
+    align-items: center;
+    padding: 41px 33px 41px 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 52px 50px 51px 50px;
+  }
+}
+
+.advantages__wrap {
+  display: flex;
+
+  @media (max-width: $mobile-width-only) {
+    flex-direction: column-reverse;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: flex-start;
     align-items: center;
   }
 }
 
 .advantages__item--flex {
   @media (min-width: $tablet-width) {
-    height: 260px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
   @media (min-width: $desktop-width) {
-    height: 260px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 }
+
+.advantage__bridge {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #81b3d2;
+  color: #ffffff;
+  padding: 0 18px 20px 18px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/source/img/main-index/tablet-hause.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 52px 53px 0 53px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 45px 50px 25px 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 52px 70px 40px 70px;
+  }
+}
+
+.advantages__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+

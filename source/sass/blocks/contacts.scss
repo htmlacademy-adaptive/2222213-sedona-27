@@ -1,8 +1,19 @@
+.contacts {
+  margin: 0;
+  padding: 29px 77px 33px 77px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
 .contacts__site {
   text-decoration: none;
 }
 
 .contacts__site-text {
+  margin: 0;
+  padding: 0;
   color: #000000;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;

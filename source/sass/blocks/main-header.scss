@@ -1,10 +1,26 @@
 .main-header {
   display: flex;
-  flex-direction: column;
+  width: 100%;
   margin: 0 auto;
   padding: 0;
   background-color: #ffffff;
   color: #000000;
+}
+
+.main-header__logo-image {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 93px);
+  width: 185px;
+  height: 96px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
 }
 
 .main-header__logo--mobile {
@@ -18,9 +34,4 @@
   @media (min-width: $desktop-width) {
     display: none;
   }
-}
-
-.main-header__logo-image {
-  width: 185px;
-  height: 96px;
 }

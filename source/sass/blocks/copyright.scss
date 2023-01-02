@@ -1,3 +1,12 @@
+.copyright {
+  margin: 0;
+  padding: 0 0 22px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
 .copyright__text {
   color: #000000;
   font-family: "PT Sans", sans-serif;

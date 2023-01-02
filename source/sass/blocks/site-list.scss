@@ -1,0 +1,123 @@
+.site-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 730px;
+    height: 56px;
+    margin-left: 23px;
+    flex-grow: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 1050px;
+    height: 56px;
+    margin-left: 91px;
+  }
+}
+
+.site-list__link {
+  font-family: "PT Sans", sans-serif;
+  color: #000000;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    font-family: "PT Sans", sans-serif;
+    color: #000000;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+}
+
+.site-list__item {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    height: 56px;
+    margin-right: 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 56px;
+    margin-right: 71px;
+  }
+}
+
+.main-header__logo--tablet {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+}
+
+
+@media (max-width: $mobile-width-only) {
+  .site-list__link {
+    position: relative;
+    display: block;
+    padding: 17px 0 12px 0;
+    background-color: rgba(129, 179, 210, 1);
+    font-family: "PT Sans", sans-serif;
+    color: #000000;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(1, 1, 1, 0.2);
+  }
+
+  .main-nav--closed .site-list__item {
+    display: none;
+  }
+
+  .main-nav--closed .user-list__item {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__wrapper {
+    position: static;
+    min-height: 0;
+  }
+
+  .main-nav--nojs .site-list__item {
+    display: block;
+    padding-right: 21px;
+    padding-left: 21px;
+  }
+}
+
+.site-list__link--active {
+  @media (min-width: $tablet-width) {
+    color: #766357;
+  }
+}

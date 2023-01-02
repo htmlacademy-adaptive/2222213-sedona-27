@@ -1,8 +1,24 @@
 .appointment {
+  margin: 0;
+  padding: 0;
   background-color: #ffffff;
+  width: 100%;
 }
 
-.appointment-title {
+.appointment__container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.appointment__wrapper {
+  padding: 38px 15px 32px 15px;
+}
+
+.appointment__title {
+  margin: 0;
   color: #000000;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
@@ -10,9 +26,23 @@
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
+  padding-bottom: 31px;
+
+  @media (min-width: $tablet-width) {
+    color: #000000;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 38px;
+    padding-top: 20px;
+  }
 }
 
-.appointment-description {
+.appointment__description {
+  margin: 0;
   color: #333333;
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
@@ -20,10 +50,24 @@
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
+
+  .tablet {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    .mobile {
+      display: none;
+    }
+
+    .tablet {
+      display: block;
+    }
+  }
 }
 
-.appointment-button {
-  padding: 10px;
+.appointment__button {
+  padding: 16px 49px 16px 49px;
   background-color: #81b3d2;
   color: #ffffff;
   font-family: "PT Sans", sans-serif;
@@ -33,4 +77,22 @@
   text-align: center;
   text-transform: uppercase;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    padding: 15px 131px 17px 131px;
+  }
 }
+
+.appointment__button:hover {
+  background-color: #669ec0;
+}
+
+.appointment__button:active {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.appointment__button:disabled {
+  background-color: #e5e5e5;
+}
+

@@ -1,25 +1,146 @@
 .advantage__title {
-  margin-bottom: 11px;
+  margin: 0;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
+  padding-top: 35px;
+  padding-bottom: 11px;
+
+  .tablet {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 0;
+    padding-bottom: 20px;
+
+    .tablet {
+      display: block;
+    }
+
+    .mobile {
+      display: none;
+    }
+  }
 }
 
 .advantage__description {
-  margin-bottom: 17px;
+  margin: 0;
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
+  padding-bottom: 17px;
+
+  .tablet {
+    display: none;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    .tablet {
+      display: block;
+    }
+
+    .mobile {
+      display: none;
+    }
+
+    .mobile-bridge {
+      display: none;
+    }
+
+    .desktop {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    .tablet {
+      display: none;
+    }
+
+    .mobile {
+      display: block;
+    }
+
+    .mobile-bridge {
+      display: none;
+    }
+
+    .desktop {
+      display: block;
+    }
+  }
 }
 
 .advantage__text {
-  margin-bottom: 17px;
+  margin: 0;
+  color: #333333;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: left;
+  text-transform: uppercase;
+  padding-top: 6px;
+  padding-bottom: 15px;
+
+  .tablet {
+    display: none;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+
+    .tablet {
+      display: block;
+    }
+
+    .mobile {
+      display: none;
+    }
+
+    .desktop {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    .tablet {
+      display: none;
+    }
+
+    .mobile {
+      display: none;
+    }
+
+    .desktop {
+      display: block;
+    }
+  }
+}
+
+.advantage__text-color {
+  margin: 0;
   color: #333333;
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
@@ -27,4 +148,43 @@
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
+  padding-bottom: 20px;
+
+  .tablet {
+    display: none;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+
+    .tablet {
+      display: block;
+    }
+
+    .mobile {
+      display: none;
+    }
+
+    .desktop {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    .tablet {
+      display: none;
+    }
+
+    .mobile {
+      display: none;
+    }
+
+    .desktop {
+      display: block;
+    }
+  }
 }

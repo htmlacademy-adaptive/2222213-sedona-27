@@ -5,28 +5,51 @@
 
 .feedback__form-grop {
   margin: 0;
-  padding: 0;
+  padding: 0 10px 39px 10px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  border: none;
+  border-bottom: 1px solid #e5e5e5;
 
   @media (min-width: $tablet-width) {
-    margin-right: 70px;
+    border: none;
+    border-right: 1px solid #d8d8d8;
+    padding-right: 43px;
+    padding-bottom: 19px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 128px;
+    border: none;
+    border-right: 1px solid #d8d8d8;
+    padding-right: 63px;
+    padding-bottom: 19px;
   }
 }
 
 .contacts-info__form-telephone {
   margin: 0;
-  padding: 0;
+  padding: 0 10px 39px 10px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  border: none;
+  border-bottom: 1px solid #e5e5e5;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    margin-top: -15px;
+    margin-left: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    border: none;
+    margin-left: 64px;
+  }
 }
 
 .feedback__wrap {
