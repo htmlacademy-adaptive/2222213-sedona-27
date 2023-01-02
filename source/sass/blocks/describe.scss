@@ -11,7 +11,11 @@
 }
 
 .describe__wrap {
-  width: 648px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -63,8 +67,9 @@
   font-size: 18px;
   line-height: 26px;
   border: none;
-  width: 279px;
+  width: 235px;
   height: 150px;
+  margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
     width: 616px;
@@ -78,7 +83,7 @@
 }
 
 .describe__button {
-  padding: 10px;
+  padding: 16px 49px 16px 49px;
   background-color: #81b3d2;
   color: #ffffff;
   font-family: "PT Sans", sans-serif;
@@ -97,4 +102,9 @@
   font-size: 12px;
   line-height: 21px;
   text-transform: uppercase;
+  margin-left: 140px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 10px;
+  }
 }
