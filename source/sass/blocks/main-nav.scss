@@ -105,7 +105,8 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    width: 94%;
+    align-items: center;
+    width: 100%;
     max-width: 1128px;
     margin: 0 auto;
   }

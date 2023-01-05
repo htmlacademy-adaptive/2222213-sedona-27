@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Седона</title>
+  <link rel="icon" href="favicon.ico" sizes="32x32">
+  <link rel="icon" href="../source/img/favicon/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../source/img/favicon/favicon-icon.png" sizes="180x180">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
@@ -53,8 +57,13 @@
     <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
     <section class="hero">
       <div class="hero__image-wrapper">
-        <img class="hero__image" src="../source/img/main-index/sedona.svg" width="320" height="389" alt="Седона.">
-        <div class="hero__image-bottom"></div>
+        <picture>
+          <source media="(min-width: 1200px)"
+            srcset="../source/img/main-index/sedona-desktop.jpg 1x, ../source/img/main-index/sedona-desktop-2x.jpg 2x">
+          <source media="(min-width: 768px)"
+            srcset="../source/img/main-index/sedona-tablet.jpg 1x, ../source/img/main-index/sedona-tablet-2x.jpg 2x">
+          <img class="hero__image" src="../source/img/main-index/sedona.jpg" srcset="../source/img/main-index/sedona-2x.jpg 2x" width="320" height="389" alt="Седона.">
+        </picture>
       </div>
       <div class="hero__wrapper">
         <h2 class="hero__title">Седона — небольшой <br class="hero__title-br">городок в Аризоне, <br>Заслуживающий
@@ -77,8 +86,15 @@
                 </div>
               </div>
               <div class="advantages__img">
-                <img class="advantages__image" src="../source/img/main-index/mountain-house.png" width="320"
-                  height="260" alt="Домик на фоне гор.">
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="../source/img/main-index/mountain-house-desktop.jpg 1x, ../source/img/main-index/mountain-house-desktop-2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="../source/img/main-index/mountain-house-tablet.jpg 1x, ../source/img/main-index/mountain-house-tablet-2x.jpg 2x">
+                  <img class="advantages__image" src="../source/img/main-index/mountain-house.jpg"
+                    srcset="../source/img/main-index/mountain-house-2x.jpg 2x" width="320" height="260"
+                    alt="Домик на фоне гор.">
+                </picture>
               </div>
             </div>
           </li>
@@ -91,7 +107,8 @@
             <div class="advantage advantage--icon">
               <h3 class="advantage__title">Еда</h3>
               <p class="advantage__text">Всегда заказывайте <br class="tablet"> ФИРМЕННЫЙ <br class="mobile"> БУРГЕР,
-                <br class="desktop"><br class="tablet"> Вы НЕ разочаруетесь!</p>
+                <br class="desktop"><br class="tablet"> Вы НЕ разочаруетесь!
+              </p>
             </div>
             <div class="advantage advantage--icon">
               <h3 class="advantage__title">Сувениры</h3>
@@ -102,15 +119,23 @@
           <li class="advantages__item">
             <div class="advantages__wrap">
               <div class="advantages__img">
-                <img class="advantages__image" src="../source/img/main-index/bridge.png" width="320" height="260"
-                  alt="Мост дьявола.">
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="../source/img/main-index/bridge-desktop.jpg 1x, ../source/img/main-index/bridge-desktop-2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="../source/img/main-index/bridge-tablet.jpg 1x, ../source/img/main-index/bridge-tablet-2x.jpg 2x">
+                    <img class="advantages__image" src="../source/img/main-index/bridge.jpg"  srcset="../source/img/main-index/bridge-2x.jpg 2x" width="320" height="260"
+                    alt="Мост дьявола.">
+                </picture>
               </div>
               <div class="advantage">
                 <div class="advantage__bridge">
+                  <div class="advantage__bridge-wrap">
                   <h3 class="advantage__title">Там есть <br class="tablet">мост дьявола</h3>
                   <p class="advantage__description">— №2 —</p>
                   <p class="advantage__description">Да, по нему можно <br class="tablet"> пройти! <br class="desktop">
                     Если вы <br class="mobile-bridge"><br class="tablet">осмелитесь, конечно</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -132,7 +157,8 @@
               <h3 class="advantage__title">Мало <br class="tablet"> туристов</h3>
               <p class="advantage__text-color">— №5 —</p>
               <p class="advantage__text-color">Большинство едут в гранд <br class="tablet">каньон <br class="mobile"> и
-                <br class="desktop">толпится там</p>
+                <br class="desktop">толпится там
+              </p>
             </div>
           </li>
         </ul>
@@ -143,7 +169,8 @@
         <div class="appointment__wrapper">
           <h2 class="appointment__title">Заинтересовались?</h2>
           <p class="appointment__description">
-            Укажите предполагаемые даты <br class="mobile"> поездки, <br class="tablet"> и мы покажем вам лучшие <br class="mobile"> предложения гостиниц в Седоне
+            Укажите предполагаемые даты <br class="mobile"> поездки, <br class="tablet"> и мы покажем вам лучшие <br
+              class="mobile"> предложения гостиниц в Седоне
           </p>
         </div>
         <button class="appointment__button" type="button">
@@ -153,8 +180,14 @@
     </section>
     <div class="map">
       <h2 class="visually-hidden">Карта Седоны</h2>
-      <img class="map__image" src="../source/img/main-index/map-mobile.png" width="320" height="350"
-                  alt="Карта Седоны.">
+      <picture>
+        <source media="(min-width: 1200px)"
+          srcset="../source/img/main-index/map-desktop.jpg 1x, ../source/img/main-index/map-desktop-2x.jpg 2x">
+        <source media="(min-width: 768px)"
+          srcset="../source/img/main-index/map-tablet.jpg 1x, ../source/img/main-index/map-tablet-2x.jpg 2x">
+          <img class="map__image" src="../source/img/main-index/map.jpg"  srcset="../source/img/main-index/map-2x.jpg 2x" width="320" height="350"
+          alt="Карта Седоны.">
+      </picture>
     </div>
   </main>
   <footer class="main-footer">
