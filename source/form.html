@@ -53,9 +53,13 @@
     <h1 class="visually-hidden">Форма отзыва</h1>
     <div class="main-inner__wrapper">
       <div class="main-inner__image-wrapper">
-        <img class="main-inner__image" src="../source/img/catalog/sedona-catalog.svg" width="320" height="389"
-          alt="Седона.">
-        <div class="main-inner__image-bottom"></div>
+        <picture>
+          <source media="(min-width: 1200px)"
+            srcset="../source/img/form/sedona-form-desktop.jpg 1x, ../source/img/form/sedona-form-desktop-2x.jpg 2x">
+          <source media="(min-width: 768px)"
+            srcset="../source/img/form/sedona-form-tablet.jpg 1x, ../source/img/form/sedona-form-tablet-2x.jpg 2x">
+          <img class="main-inner__image" src="../source/img/form/sedona-form.jpg" srcset="../source/img/form/sedona-form-2x.jpg 2x" width="320" height="389" alt="Седона.">
+        </picture>
       </div>
       <div class="main-inner__wrap">
         <h2 class="main-inner__title">Оставьте свой отзыв</h2>

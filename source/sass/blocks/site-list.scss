@@ -6,11 +6,11 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     width: 730px;
     height: 56px;
-    margin-left: 23px;
+    margin-left: 48px;
     flex-grow: 1;
   }
 
