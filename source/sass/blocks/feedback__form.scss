@@ -46,3 +46,12 @@
     padding-right: 0;
   }
 }
+
+.feedback__field:hover {
+  background-color: #e5e5e5;
+}
+
+.feedback__field:active {
+  background-color: #ffffff;
+  border: 4px solid #e5e5e5;
+}

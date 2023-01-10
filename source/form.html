@@ -58,14 +58,16 @@
             srcset="../source/img/form/sedona-form-desktop.jpg 1x, ../source/img/form/sedona-form-desktop-2x.jpg 2x">
           <source media="(min-width: 768px)"
             srcset="../source/img/form/sedona-form-tablet.jpg 1x, ../source/img/form/sedona-form-tablet-2x.jpg 2x">
-          <img class="main-inner__image" src="../source/img/form/sedona-form.jpg" srcset="../source/img/form/sedona-form-2x.jpg 2x" width="320" height="389" alt="Седона.">
+          <img class="main-inner__image" src="../source/img/form/sedona-form.jpg"
+            srcset="../source/img/form/sedona-form-2x.jpg 2x" width="320" height="389" alt="Седона.">
         </picture>
       </div>
       <div class="main-inner__wrap">
         <h2 class="main-inner__title">Оставьте свой отзыв</h2>
         <p class="main-inner__description">Помогите нашим отелям стать лучше! <br class="mobile">оставьте отзыв о них,
           <br class="tablet">а также о <br class="mobile">посещенных
-          вами<br class="mobile"> достопримечательностях</p>
+          вами<br class="mobile"> достопримечательностях
+        </p>
       </div>
     </div>
     <section class="main-inner__feedback feedback">
@@ -88,72 +90,99 @@
                 <div class="contacts-info__wrapper">
                   <input class="contacts-info__field" placeholder="Введите телефон" type="text" id="telephone"
                     name="telephone">
-                  <button class="contacts-info__button" type="button"> <span
-                      class="contacts-info__telephone visually-hidden">Телефон</span> </button>
+                  <button class="contacts-info__button" type="button">
+                    <span class="visually-hidden">Телефон</span>
+                    <svg class="contacts-info__telephone" width="18" height="18">
+                      <use xlink:href="img/sprite.svg#contacts-info__telephone"></use>
+                    </svg>
+                  </button>
                 </div>
                 <label class="contacts-info__form-label" for="email">Электронная почта*:</label>
                 <div class="contacts-info__wrapper">
-                <input class="contacts-info__field" placeholder="Введите e-mail" type="email" id="email" name="email">
-                <button class="contacts-info__button" type="button"> <span
-                    class=" contacts-info__email visually-hidden">e-mail</span> </button>
+                  <input class="contacts-info__field" placeholder="Введите e-mail" type="email" id="email" name="email">
+                  <button class="contacts-info__button" type="button">
+                    <span class="visually-hidden">e-mail</span>
+                    <svg class="contacts-info__email" width="16" height="12">
+                      <use xlink:href="img/sprite.svg#contacts-info__email"></use>
+                    </svg>
+                  </button>
                 </div>
               </fieldset>
             </div>
           </div>
           <div class="feedback__wrapper radio">
-            <h2 class="radio__title">Ваше общее впечатление:</h2>
+            <div class="radio__wrap">
+              <span class="radio__left"></span>
+              <h2 class="radio__title">Ваше общее впечатление:</h2>
+              <span class="radio__right"></span>
+            </div>
             <ul class="radio__list">
               <li class="radio__item">
                 <label class="radio__form-label">
-                  <input class="radio__field" type="radio" name="type-of-housing" value="rather-positive" checked>
+                  <input class="radio__field visually-hidden" type="radio" name="type-of-housing" value="rather-positive" checked>
+                  <span class="radio__mark"></span>
                   <span class="radio__label">Скорее положительное</span>
                 </label>
               </li>
               <li class="radio__item">
                 <label class="radio__form-label radio__form-label--left">
-                  <input class="radio__field" type="radio" name="type-of-housing" value="rather-negative">
+                  <input class="radio__field visually-hidden" type="radio" name="type-of-housing" value="rather-negative">
+                  <span class="radio__mark"></span>
                   <span class="radio__label">Скорее отрицательное</span>
                 </label>
               </li>
               <li class="radio__item">
                 <label class="radio__form-label">
-                  <input class="radio__field" type="radio" name="type-of-housing" value="difficult">
+                  <input class="radio__field visually-hidden" type="radio" name="type-of-housing" value="difficult">
+                  <span class="radio__mark"></span>
                   <span class="radio__label">Затрудняюсь ответить</span>
                 </label>
               </li>
             </ul>
           </div>
           <div class="feedback__wrapper checkbox">
-            <h2 class="checkbox__title">Посещенные <br>достопримечательности:</h2>
+            <div class="checkbox__wrap">
+              <span class="checkbox__left"></span>
+              <h2 class="checkbox__title">Посещенные <br>достопримечательности:</h2>
+              <span class="checkbox__right"></span>
+            </div>
             <ul class="checkbox__list">
               <li class="checkbox__item">
                 <label class="checkbox__form-label">
-                  <input class="checkbox__field" type="checkbox" name="bridge" checked>
+                  <input class="checkbox__field visually-hidden" type="checkbox" name="bridge" checked>
+                  <span class="checkbox__mark"></span>
                   <span class="checkbox__label">Мост Дьявола</span>
                 </label>
               </li>
               <li class="checkbox__item">
                 <label class="checkbox__form-label">
-                  <input class="checkbox__field" type="checkbox" name="bell-mountain" checked>
+                  <input class="checkbox__field visually-hidden" type="checkbox" name="bell-mountain" checked>
+                  <span class="checkbox__mark"></span>
                   <span class="checkbox__label">Гора-Колокол</span>
                 </label>
               </li>
               <li class="checkbox__item">
                 <label class="checkbox__form-label">
-                  <input class="checkbox__field" type="checkbox" name="slide-park" checked>
+                  <input class="checkbox__field visually-hidden" type="checkbox" name="slide-park" checked>
+                  <span class="checkbox__mark"></span>
                   <span class="checkbox__label">Слайд-парк</span>
                 </label>
               </li>
               <li class="checkbox__item">
                 <label class="checkbox__form-label">
-                  <input class="checkbox__field" type="checkbox" name="red-rocks">
+                  <input class="checkbox__field visually-hidden" type="checkbox" name="red-rocks">
+                  <span class="checkbox__mark"></span>
                   <span class="checkbox__label">Красные скалы</span>
                 </label>
               </li>
             </ul>
           </div>
           <div class="feedback__wrapper describe">
-            <h2 class="describe__title">Опишите свои эмоции:</h2>
+            <div class="describe__wrapper">
+              <span class="describe__left"></span>
+              <h2 class="describe__title">Опишите свои эмоции:</h2>
+              <span class="describe__right"></span>
+            </div>
             <fieldset class="describe__form-grop">
               <textarea class="describe__field" id="describe" name="describe"
                 placeholder="Опишите подробно все свои восторги"></textarea>
@@ -177,21 +206,35 @@
       <div class="main-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+              <svg class="social__link-vkontakte" width="24" height="14">
+                <use xlink:href="img/sprite.svg#social__link-vkontakte"></use>
+              </svg>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
+            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+              <svg class="social__link-telegram" width="22" height="18">
+                <use xlink:href="img/sprite.svg#social__link-telegram"></use>
+              </svg>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в
-              Ютубе</a>
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+              <svg class="social__link-youtube" width="20" height="14">
+                <use xlink:href="img/sprite.svg#social__link-youtube"></use>
+              </svg>
+            </a>
           </li>
         </ul>
       </div>
       <div class="main-footer__copyright copyright">
-        <b class="copyright__text">Разработано:</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img class="main-footer__logo-image"
-            src="../source/img/htmlacademy.svg" width="27" height="34" alt="HTML Academy."></a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <b class="copyright__text">Разработано</b>
+          <svg class="main-footer__logo-image" width="27" height="35">
+            <use xlink:href="img/sprite.svg#main-footer__logo-image"></use>
+          </svg>
+        </a>
       </div>
     </div>
   </footer>

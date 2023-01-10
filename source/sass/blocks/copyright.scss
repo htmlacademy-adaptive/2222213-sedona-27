@@ -4,6 +4,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
+    padding-right: 10px;
   }
 }
 
@@ -17,6 +18,36 @@
   text-transform: uppercase;
 }
 
+.copyright__text:hover {
+  color: #81b3d2;
+}
+
+.copyright__text:active {
+  color: #b3b3b3;
+}
+
 .copyright__link {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
+  padding-right: 40px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.main-footer__logo-image {
+  position: absolute;
+  right: 0;
+  color: #000000;
+}
+
+.main-footer__logo-image:hover {
+  color: #81b3d2;
+}
+
+.main-footer__logo-image:active {
+  color: #b3b3b3;
 }

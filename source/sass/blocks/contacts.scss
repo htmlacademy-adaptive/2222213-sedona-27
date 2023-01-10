@@ -22,3 +22,11 @@
   text-align: center;
   text-transform: uppercase;
 }
+
+.contacts__site-text:hover {
+  color: #81b3d2;
+}
+
+.contacts__site-text:active {
+  color: rgba(0, 0, 0, 0.3);
+}
