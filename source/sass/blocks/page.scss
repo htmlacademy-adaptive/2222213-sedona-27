@@ -11,3 +11,9 @@
   background-color: #ffffff;
   color: #000000;
 }
+
+.page__body-layout {
+  @media (min-width: $desktop-width) {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  }
+}

@@ -57,6 +57,7 @@
 }
 
 .advantage--icon {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -73,7 +74,77 @@
     justify-content: center;
     align-items: center;
     margin: 0;
-    padding: 60px 33px 60px 33px;
+    padding: 158px 33px 60px 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 169px 50px 69px 50px;
+  }
+}
+
+.advantage__icon-house {
+  @media (max-width: $mobile-width-only) {
+    position: absolute;
+    left: -45px;
+    top: 25px;
+  }
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    width: 77px;
+    height: 72px;
+    top: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    width: 80px;
+    height: 73px;
+    top: 69px;
+  }
+}
+
+.advantage__icon-burger {
+  @media (max-width: $mobile-width-only) {
+    position: absolute;
+    left: -45px;
+    top: 25px;
+  }
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    width: 80px;
+    height: 67px;
+    top: 62px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    width: 73px;
+    height: 68px;
+    top: 72px;
+  }
+}
+
+.advantage__icon-gift {
+  @media (max-width: $mobile-width-only) {
+    position: absolute;
+    left: -45px;
+    top: 25px;
+  }
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    width: 80px;
+    height: 67px;
+    top: 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    width: 78px;
+    height: 75px;
+    top: 69px;
   }
 }
 
@@ -129,6 +200,8 @@
 }
 
 .advantages__item--flex {
+  margin-top: -6px;
+
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: center;

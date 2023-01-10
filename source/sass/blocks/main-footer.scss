@@ -4,6 +4,11 @@
   width: 100%;
   background-color: #ffffff;
   color: #000000;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 30px;
+    padding-bottom: 36px;
+  }
 }
 
 .main-footer__wrapper {
