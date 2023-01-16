@@ -114,6 +114,20 @@
   border: none;
 }
 
+.describe__button:hover {
+  background-color: #669ec0;
+}
+
+.describe__button:active {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.describe__button:disabled {
+  background-color: #e5e5e5;
+}
+
+
 .describe__label {
   color: rgba(51, 51, 51, 0.6);
   font-family: "PT Sans", sans-serif;
