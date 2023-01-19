@@ -37,14 +37,14 @@
 }
 
 .advantage__image {
-  background-image: url("/source/img/main-index/top-hause.png");
+  background-image: url("/img/main-index/top-hause.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   padding: 54px 30px 27px 30px;
 
   @media (min-width: $tablet-width) {
-    background-image: url("/source/img/main-index/tablet-hause.png");
+    background-image: url("/img/main-index/tablet-hause.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -227,7 +227,7 @@
   padding: 0 32px 20px 30px;
 
   @media (min-width: $tablet-width) {
-    background-image: url("/source/img/main-index/tablet-hause.png");
+    background-image: url("/img/main-index/tablet-hause.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

@@ -157,12 +157,12 @@
 }
 
 .checkbox__field[type="checkbox"]:checked + .checkbox__mark {
-  background-image: url("/source/img/form/tick.svg");
+  background-image: url("/img/form/tick.svg");
   background-repeat: no-repeat;
   background-position: center;
 
   &:active {
-    background-image: url("/source/img/form/tick-active.svg");
+    background-image: url("/img/form/tick-active.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
