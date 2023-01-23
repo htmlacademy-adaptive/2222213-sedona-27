@@ -1,16 +1,21 @@
 .main-catalog__title {
   margin: 0;
-  padding-bottom: 35px;
+  padding-bottom: 25px;
   font-family: "PT Sans", sans-serif;
   color: #000000;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 15.5px;
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    font-size: 30px;
+    font-size: 27px;
+    margin-top: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 37px;
   }
 }
 
@@ -19,16 +24,21 @@
   font-family: "PT Sans", sans-serif;
   color: #333333;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12.5px;
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
+  padding-bottom: 37px;
 
   .tablet {
     display: none;
   }
 
   @media (min-width: $tablet-width) {
+    margin-top: 5px;
+    margin-bottom: 82px;
+    padding: 0;
+
     .tablet {
       display: block;
     }
@@ -36,6 +46,10 @@
     .mobile {
       display: none;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 90px;
   }
 }
 
@@ -56,9 +70,18 @@
 }
 
 .main-catalog__image {
-  display: flex;
+  position: absolute;
+  top: -56px;
+  left: 0;
   width: 100%;
   object-fit: cover;
+  margin-bottom: 50px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    object-fit: cover;
+    margin-bottom: 0;
+  }
 }
 
 .main-catalog__wrap {
@@ -68,16 +91,12 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 37px 10px 25px 10px;
+  margin-top: 195px;
   border-bottom: 1px solid #e5e5e5;
 
   @media (min-width: $tablet-width) {
     border: none;
-    padding: 66px 140px 67px 140px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 100px 340px 65px 340px;
+    margin-top: 0;
   }
 }
 

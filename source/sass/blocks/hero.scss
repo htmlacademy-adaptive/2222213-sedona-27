@@ -36,17 +36,17 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 32px 16px 16px 18px;
+  padding: 32px 0 16px 0;
   background-color: #ffffff;
   width: 100%;
 
   @media (min-width: $tablet-width) {
     margin: 0;
-    padding: 48px 124px 55px 124px;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    padding: 59px 345px 44px 345px;
+    padding: 0;
   }
 }

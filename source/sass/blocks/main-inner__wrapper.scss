@@ -5,15 +5,15 @@
   justify-content: center;
   align-items: center;
   margin: 0;
-  padding: 36px 10px 33px 10px;
+  margin-top: 195px;
   width: 100%;
 
   @media (min-width: $tablet-width) {
-    padding: 64px 150px 102px 150px;
+    margin-top: 2px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 115px 370px 67px 370px;
+    margin-top: 2px;
   }
 }
 
@@ -22,14 +22,19 @@
   color: #000000;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 15.5px;
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
   padding-bottom: 24px;
 
   @media (min-width: $tablet-width) {
-    font-size: 30px;
+    font-size: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 52px;
+    margin-bottom: 8px;
   }
 }
 
@@ -38,16 +43,18 @@
   color: #333333;
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12.5px;
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
+  padding-bottom: 26px;
 
   .tablet {
     display: none;
   }
 
   @media (min-width: $tablet-width) {
+    padding-bottom: 95px;
     text-align: center;
 
     .tablet {
@@ -57,5 +64,9 @@
     .mobile {
       display: none;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 57px;
   }
 }

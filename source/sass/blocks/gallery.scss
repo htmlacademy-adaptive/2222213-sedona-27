@@ -65,9 +65,14 @@
   font-family: "PT Sans", sans-serif;
   color: #000000;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 21px;
   text-transform: uppercase;
+  padding-top: 10px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
 
   @media (min-width: $desktop-width) {
     color: #ffffff;
@@ -79,7 +84,7 @@
   font-family: "PT Sans", sans-serif;
   color: #333333;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12.5px;
   line-height: 21px;
 
   @media (min-width: $desktop-width) {
@@ -96,6 +101,7 @@
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+  padding-bottom: 5px;
 
   @media (min-width: $desktop-width) {
     color: #ffffff;
@@ -129,7 +135,11 @@
 
 .gallery__wrap-text {
   @media (min-width: $tablet-width) {
-    padding: 22px 0 15px 20px;
+    padding: 24px 0 15px 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 20px 0 15px 20px;
   }
 }
 

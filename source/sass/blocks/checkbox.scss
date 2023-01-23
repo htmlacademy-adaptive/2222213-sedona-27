@@ -20,7 +20,7 @@
     grid-template-columns: 1fr;
     width: 100%;
     margin: 0;
-    padding: 0 20px 24px 40px;
+    padding: 0 20px 0 32px;
     list-style-type: none;
     border-bottom: 1px solid #e5e5e5;
   }
@@ -29,17 +29,19 @@
     display: grid;
     grid-template-columns: 235px 235px;
     width: 100%;
-    padding-left: 114px;
+    padding-left: 95px;
+    grid-column-gap: 21px;
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 172px 170px 153px 184px;
+    grid-column-gap: 64px;
     width: 100%;
     padding: 0;
-    margin-left: 14px;
+    margin-left: 57px;
+    margin-top: 10px;
+    margin-bottom: 45px;
   }
 }
 
@@ -47,20 +49,24 @@
   color: #000000;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 15.5px;
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
+  margin: 0;
+  margin-top: 27px;
+  margin-bottom: 8px;
 
   @media (min-width: $tablet-width) {
-    font-size: 21px;
+    font-size: 18px;
     margin: 0;
     margin-top: 28px;
-    margin-bottom: 28px;
+    margin-bottom: 17px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 28px;
+    margin-bottom: 40px;
+    margin-top: 35px;
   }
 }
 
@@ -68,7 +74,7 @@
   color: #000000;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 26px;
 }
 
@@ -93,9 +99,10 @@
 .checkbox__left {
   @media (min-width: $tablet-width) {
     margin: 0;
-    margin-right: 60px;
+    margin-right: 65px;
     border-bottom: 1px solid #d8d8d8;
     padding-left: 123px;
+    margin-top: 5px;
   }
 
   @media (min-width: $desktop-width) {
@@ -111,7 +118,8 @@
     margin: 0;
     border-bottom: 1px solid #d8d8d8;
     padding-right: 123px;
-    margin-left: 60px;
+    margin-left: 65px;
+    margin-top: 5px;
   }
 
   @media (min-width: $desktop-width) {
@@ -124,12 +132,12 @@
 
 .checkbox__item {
   margin-left: 50px;
-  margin-bottom: 26px;
+  margin-bottom: 14px;
   margin-top: 20px;
 }
 
 .checkbox__item:nth-child(4) {
-  margin-bottom: 10px;
+  margin-bottom: 31px;
 }
 
 .checkbox__form-label {
@@ -141,7 +149,7 @@
 .checkbox__mark {
   position: absolute;
   top: -10px;
-  left: -70px;
+  left: -62px;
   width: 46px;
   height: 46px;
   background-color: #f2f2f2;

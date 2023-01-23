@@ -1,9 +1,19 @@
 .contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0;
-  padding: 29px 77px 33px 77px;
+  padding-top: 27px;
+  padding-bottom: 33px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
+    padding-left: 8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    margin-left: -10px;
   }
 }
 
@@ -17,7 +27,7 @@
   color: #000000;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;

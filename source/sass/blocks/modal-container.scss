@@ -1,24 +1,12 @@
 .modal-container {
-  position: absolute;
-  top: 1155px;
+  position: fixed;
+  top: 0;
   left: 0;
   display: flex;
   width: 100%;
   height: 100%;
-  padding-bottom: 400px;
   background-color: rgba(0, 0, 0, 0.3);
-
-  @media (min-width: $tablet-width) {
-    top: 1065px;
-    padding-bottom: 105px;
-    padding-top: 70px;
-  }
-
-  @media (min-width: $desktop-width) {
-    top: 965px;
-    padding-bottom: 0;
-    padding-top: 0;
-  }
+  z-index: 5;
 }
 
 .modal-container--close {
@@ -150,26 +138,14 @@
 }
 
 .modal-container-2 {
-  position: absolute;
-  top: 1485px;
+  position: fixed;
+  top: 0;
   left: 0;
   display: flex;
   width: 100%;
   height: 100%;
-  padding-bottom: 70px;
   background-color: rgba(0, 0, 0, 0.3);
-
-  @media (min-width: $tablet-width) {
-    top: 800px;
-    padding-bottom: 75px;
-    padding-top: 70px;
-  }
-
-  @media (min-width: $desktop-width) {
-    top: 800px;
-    padding-bottom: 0;
-    padding-top: 0;
-  }
+  z-index: 5;
 }
 
 .modal-container--close-2 {

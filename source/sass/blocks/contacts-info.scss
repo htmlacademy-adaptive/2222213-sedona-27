@@ -9,49 +9,81 @@
   color: #000000;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
   padding-bottom: 20px;
-  padding-top: 15px;
+  padding-top: 25px;
   padding-left: 30px;
 
   @media (min-width: $tablet-width) {
-    margin-left: -46px;
-    font-size: 21px;
+    font-size: 18.5px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 28px;
+    margin-left: 5px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 10px;
+    font-size: 18.5px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 28px;
+    margin-left: 50px;
   }
 }
 
 .contacts-info__form-label {
   margin: 0;
-  padding-left: 20px;
+  padding-left: 27px;
   color: #333333;
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12.5px;
   line-height: 21px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 0;
+    margin-left: 39px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding: 0;
+    margin-left: 35px;
+  }
 }
 
 .contacts-info__field {
   margin-bottom: 16px;
+  margin-left: 10px;
   padding: 16px 0 16px 16px;
   background-color: #f2f2f2;
   color: rgba(0, 0, 0, 0.3);
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 26px;
   border: none;
 
+  @media (min-width: $tablet-width) {
+    font-size: 15.5px;
+    margin: 0;
+    padding: 16px 16px 16px 16px;
+    margin-bottom: 17px;
+    margin-left: 20px;
+    width: 200px;
+  }
+
   @media (min-width: $desktop-width) {
-    width: 344px;
-    padding-right: 0;
+    width: 320px;
+    margin: 0;
+    padding: 16px 16px 16px 16px;
+    margin-bottom: 17px;
+    margin-left: 20px;
   }
 }
 
@@ -62,6 +94,7 @@
 .contacts-info__button {
   position: relative;
   margin-bottom: 16px;
+  margin-left: -8px;
   width: 58px;
   height: 58px;
   background-color: #e6e6e6;
@@ -69,6 +102,14 @@
   text-align: center;
   text-transform: uppercase;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    margin-left: -8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -8px;
+  }
 }
 
 .contacts-info__telephone {
