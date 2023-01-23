@@ -16,7 +16,7 @@
     grid-template-columns: 1fr;
     width: 100%;
     margin: 0;
-    padding: 0 20px 24px 40px;
+    padding: 0 20px 14px 32px;
     list-style-type: none;
     border-bottom: 1px solid #e5e5e5;
   }
@@ -25,7 +25,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 0;
-    padding: 18px 70px 28px 70px;
+    padding: 18px 46px 11px 46px;
     list-style-type: none;
     border: none;
     width: 100%;
@@ -33,9 +33,11 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 280px 280px 280px;
+    grid-column-gap: 28px;
     margin: 0;
-    padding: 18px 80px 28px 80px;
+    margin-left: 115px;
+    padding: 18px 0 28px 0;
     list-style-type: none;
     border: none;
     width: 100%;
@@ -56,19 +58,23 @@
   color: #000000;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 15.3px;
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
+  margin: 0;
+  margin-top: 24px;
+  margin-bottom: 10px;
 
   @media (min-width: $tablet-width) {
-    font-size: 21px;
+    font-size: 18px;
     margin: 0;
-    margin-top: 48px;
+    margin-top: 43px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 28px;
+    margin-bottom: 15px;
+    margin-top: 53px;
   }
 }
 
@@ -80,7 +86,7 @@
   color: #000000;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 26px;
 }
 
@@ -114,7 +120,7 @@
   @media (min-width: $desktop-width) {
     margin: 0;
     margin-right: 60px;
-    margin-top: 17px;
+    margin-top: 30px;
     border-bottom: 1px solid #d8d8d8;
     padding-left: 280px;
   }
@@ -134,18 +140,24 @@
     border-bottom: 1px solid #d8d8d8;
     padding-right: 280px;
     margin-left: 60px;
-    margin-top: 17px;
+    margin-top: 30px;
   }
 }
 
 .radio__item {
   margin-left: 50px;
-  margin-bottom: 26px;
+  margin-bottom: 13px;
   margin-top: 20px;
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+    margin-bottom: 13px;
+    margin-top: 20px;
+  }
 }
 
 .radio__item:nth-child(3) {
-  margin-bottom: 0;
+  margin-bottom: 19px;
 }
 
 .radio__form-label {
@@ -156,8 +168,8 @@
 
 .radio__mark {
   position: absolute;
-  bottom: -10px;
-  left: -70px;
+  bottom: -7px;
+  left: -62px;
   width: 46px;
   height: 46px;
   background-color: #f2f2f2;

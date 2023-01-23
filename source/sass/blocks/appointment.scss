@@ -14,7 +14,13 @@
 }
 
 .appointment__wrapper {
-  padding: 38px 15px 32px 15px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 38px 0 0 0;
 }
 
 .appointment__title {
@@ -22,21 +28,27 @@
   color: #000000;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
-  font-size: 21px;
+  font-size: 17.7px;
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
-  padding-bottom: 31px;
+  padding-bottom: 21px;
+  padding-top: 3px;
 
   @media (min-width: $tablet-width) {
     color: #000000;
     font-family: "PT Sans", sans-serif;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 25.5px;
     line-height: 26px;
     text-align: center;
     text-transform: uppercase;
-    padding-bottom: 38px;
+    padding-bottom: 33px;
+    padding-top: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 33px;
     padding-top: 20px;
   }
 }
@@ -46,16 +58,19 @@
   color: #333333;
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12.5px;
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
+  padding-bottom: 30px;
 
   .tablet {
     display: none;
   }
 
   @media (min-width: $tablet-width) {
+    padding-bottom: 40px;
+
     .mobile {
       display: none;
     }
@@ -63,6 +78,10 @@
     .tablet {
       display: block;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 45px;
   }
 }
 
@@ -72,14 +91,19 @@
   color: #ffffff;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
-  font-size: 21px;
+  font-size: 18.6px;
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
   border: none;
 
   @media (min-width: $tablet-width) {
-    padding: 15px 131px 17px 131px;
+    padding: 15px 137px 17px 137px;
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 17px;
   }
 }
 

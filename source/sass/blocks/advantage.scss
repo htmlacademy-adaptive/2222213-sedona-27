@@ -2,12 +2,12 @@
   margin: 0;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 15.5px;
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
-  padding-top: 35px;
-  padding-bottom: 11px;
+  padding-top: 20px;
+  padding-bottom: 10px;
 
   .tablet {
     display: none;
@@ -16,12 +16,14 @@
   @media (min-width: $tablet-width) {
     font-family: "PT Sans", sans-serif;
     font-weight: 700;
-    font-size: 21px;
+    font-size: 18px;
     line-height: 26px;
     text-align: center;
     text-transform: uppercase;
-    padding-top: 0;
-    padding-bottom: 20px;
+    margin-top: 52px;
+    margin-bottom: 14px;
+    padding: 0;
+
 
     .tablet {
       display: block;
@@ -33,11 +35,52 @@
   }
 }
 
+.advantage__bridge-title {
+  margin: 0;
+  margin-top: 19px;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 15.5px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 20px;
+  padding-bottom: 10px;
+
+  .tablet {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0;
+    margin-top: 25px;
+    margin-bottom: 0;
+
+    .tablet {
+      display: block;
+    }
+
+    .mobile {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 3px;
+  }
+}
+
 .advantage__description {
   margin: 0;
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12.5px;
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
@@ -52,6 +95,9 @@
   }
 
   @media (min-width: $tablet-width) {
+    padding: 0;
+    margin-bottom: 20px;
+
     .tablet {
       display: block;
     }
@@ -88,12 +134,86 @@
   }
 }
 
+.advantage__bridge-description {
+  margin: 0;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 12.5px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 17px;
+
+  .tablet {
+    display: none;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin-top: 20px;
+
+    .tablet {
+      display: block;
+    }
+
+    .mobile {
+      display: none;
+    }
+
+    .mobile-bridge {
+      display: none;
+    }
+
+    .desktop {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    .tablet {
+      display: none;
+    }
+
+    .mobile {
+      display: block;
+    }
+
+    .mobile-bridge {
+      display: none;
+    }
+
+    .desktop {
+      display: block;
+    }
+  }
+}
+
+.advantage__bridge-description1 {
+  margin: 0;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 12.5px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin-top: 15px;
+  }
+}
+
 .advantage__text {
   margin: 0;
   color: #333333;
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12.5px;
   line-height: 21px;
   text-align: left;
   text-transform: uppercase;
@@ -109,6 +229,7 @@
   }
 
   @media (min-width: $tablet-width) {
+    padding-top: 10px;
     text-align: center;
 
     .tablet {
@@ -144,7 +265,7 @@
   color: #333333;
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12.3px;
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
@@ -159,6 +280,326 @@
   }
 
   @media (min-width: $tablet-width) {
+    text-align: center;
+
+    .tablet {
+      display: block;
+    }
+
+    .mobile {
+      display: none;
+    }
+
+    .desktop {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    .tablet {
+      display: none;
+    }
+
+    .mobile {
+      display: none;
+    }
+
+    .desktop {
+      display: block;
+    }
+  }
+}
+
+.advantage__title-botomm {
+  margin: 0;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 15.5px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 20px;
+  padding-bottom: 10px;
+
+  .tablet {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 24px;
+    margin-bottom: 16px;
+    padding: 0;
+
+
+    .tablet {
+      display: block;
+    }
+
+    .mobile {
+      display: none;
+    }
+  }
+}
+
+.advantage__icon-title {
+  margin: 0;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 15.5px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 20px;
+  padding-bottom: 10px;
+
+  .tablet {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 52px;
+    margin-bottom: 14px;
+    padding: 0;
+
+
+    .tablet {
+      display: block;
+    }
+
+    .mobile {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 65px;
+    margin-bottom: 14px;
+  }
+}
+
+.advantage__icon-text {
+  margin: 0;
+  color: #333333;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 12.5px;
+  line-height: 21px;
+  text-align: left;
+  text-transform: uppercase;
+  padding-top: 6px;
+  padding-bottom: 15px;
+
+  .tablet {
+    display: none;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 10px;
+    text-align: center;
+
+    .tablet {
+      display: block;
+    }
+
+    .mobile {
+      display: none;
+    }
+
+    .desktop {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    .tablet {
+      display: none;
+    }
+
+    .mobile {
+      display: none;
+    }
+
+    .desktop {
+      display: block;
+    }
+  }
+}
+
+.advantage__icon2-title {
+  margin: 0;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 15.5px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 20px;
+  padding-bottom: 10px;
+
+  .tablet {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 52px;
+    margin-bottom: 14px;
+    padding: 0;
+
+
+    .tablet {
+      display: block;
+    }
+
+    .mobile {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 65px;
+    margin-bottom: 14px;
+  }
+}
+
+.advantage__icon2-text {
+  margin: 0;
+  color: #333333;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 12.5px;
+  line-height: 21px;
+  text-align: left;
+  text-transform: uppercase;
+  padding-top: 6px;
+  padding-bottom: 15px;
+
+  .tablet {
+    display: none;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 10px;
+    text-align: center;
+
+    .tablet {
+      display: block;
+    }
+
+    .mobile {
+      display: none;
+    }
+
+    .desktop {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    .tablet {
+      display: none;
+    }
+
+    .mobile {
+      display: none;
+    }
+
+    .desktop {
+      display: block;
+    }
+  }
+}
+
+.advantage__icon3-title {
+  margin: 0;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 15.5px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 20px;
+  padding-bottom: 10px;
+
+  .tablet {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 52px;
+    margin-bottom: 14px;
+    padding: 0;
+
+
+    .tablet {
+      display: block;
+    }
+
+    .mobile {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 70px;
+    margin-bottom: 14px;
+  }
+}
+
+
+.advantage__icon3-text {
+  margin: 0;
+  color: #333333;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 12.5px;
+  line-height: 21px;
+  text-align: left;
+  text-transform: uppercase;
+  padding-top: 6px;
+  padding-bottom: 15px;
+
+  .tablet {
+    display: none;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 10px;
     text-align: center;
 
     .tablet {
