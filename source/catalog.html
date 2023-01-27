@@ -12,8 +12,8 @@
   <div class="page__body-layout">
     <header class="main-header">
       <nav class="main-nav main-nav--closed main-nav--nojs">
-        <a class="main-header__logo main-header__logo--mobile" href="#">
-          <img class="main-header__logo-image" src="./img/header/logo.svg" alt="Логотип «Седона».">
+        <a class="main-nav__logo main-nav__logo--mobile" href="index.html">
+          <img class="main-nav__logo-image" src="./img/header/logo.svg" alt="Логотип «Седона».">
         </a>
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
@@ -31,8 +31,8 @@
               </a>
             </li>
             <li class="site-list__item">
-              <a class="main-header__logo  main-header__logo--tablet" href="#">
-                <img class="main-header__logo-image" src="./img/header/logo.svg" width="185" height="96"
+              <a class="site-list__logo  site-list__logo--tablet" href="#">
+                <img class="site-list__logo-image" src="./img/header/logo.svg" width="185" height="96"
                   alt="Логотип «Седона».">
               </a>
             </li>
@@ -55,12 +55,10 @@
       <div class="main-catalog__wrapper">
         <div class="main-catalog__image-wrapper">
           <picture>
-            <source media="(min-width: 1200px)"
-              srcset="./img/catalog/sedona-catalog-desktop.jpg 1x, ./img/catalog/sedona-catalog-desktop-2x.jpg 2x">
-            <source media="(min-width: 768px)"
-              srcset="./img/catalog/sedona-catalog-tablet.jpg 1x, ./img/catalog/sedona-catalog-tablet-2x.jpg 2x">
-            <img class="main-catalog__image" src="./img/catalog/sedona-catalog.jpg"
-              srcset="./img/catalog/sedona-catalog-2x.jpg 2x" width="320" height="214" alt="Седона.">
+            <source media="(min-width: 1200px)" srcset="./img/catalog/sedona-catalog-desktop.svg">
+            <source media="(min-width: 768px)" srcset="./img/catalog/sedona-catalog-tablet.svg">
+            <img class="main-catalog__image" src="./img/catalog/sedona-catalog.svg"
+              width="229" height="39" alt="Седона.">
           </picture>
         </div>
         <div class="main-catalog__wrap">
@@ -88,7 +86,7 @@
                   <h3 class="gallery__title">Неродные просторы</h3>
                   <p class="gallery__description">Автор фото: Борис</p>
                 </div>
-                <div class="gallery__wrap-icon">
+                <div class="gallery__wrap-icon" tabindex="0">
                   <svg class="gallery__smile" width="23" height="21">
                     <use xlink:href="img/sprite.svg#like-icon"></use>
                   </svg>
@@ -111,7 +109,7 @@
                   <h3 class="gallery__title">Местная растительность</h3>
                   <p class="gallery__description">Автор фото: Сергей</p>
                 </div>
-                <div class="gallery__wrap-icon">
+                <div class="gallery__wrap-icon" tabindex="0">
                   <svg class="gallery__smile" width="23" height="21">
                     <use xlink:href="img/sprite.svg#like-icon"></use>
                   </svg>
@@ -134,7 +132,7 @@
                   <h3 class="gallery__title">Дорога на север</h3>
                   <p class="gallery__description">Автор фото: Петр</p>
                 </div>
-                <div class="gallery__wrap-icon">
+                <div class="gallery__wrap-icon" tabindex="0">
                   <svg class="gallery__smile" width="23" height="21">
                     <use xlink:href="img/sprite.svg#like-icon"></use>
                   </svg>
@@ -157,7 +155,7 @@
                   <h3 class="gallery__title">Мост дьявола</h3>
                   <p class="gallery__description">Автор фото: Антон</p>
                 </div>
-                <div class="gallery__wrap-icon">
+                <div class="gallery__wrap-icon" tabindex="0">
                   <svg class="gallery__smile" width="23" height="21">
                     <use xlink:href="img/sprite.svg#like-icon"></use>
                   </svg>
@@ -221,7 +219,7 @@
           </ul>
         </div>
         <div class="main-footer__copyright copyright">
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <a class="copyright__link copyright__link--right" href="https://htmlacademy.ru/intensive/adaptive">
             <b class="copyright__text">Разработано</b>
             <svg class="copyright__html-academy" width="27" height="35" viewBox="0 0 27 35" fill="currentColor"
               xmlns="http://www.w3.org/2000/svg">

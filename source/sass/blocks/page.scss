@@ -1,6 +1,6 @@
 .page {
   height: 100%;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 21px;
   line-height: 26px;
 }
@@ -8,8 +8,16 @@
 .page__body {
   margin: 0;
   min-height: 100%;
-  background-color: #ffffff;
+  background: #ffffff url("/img/header/mobile-background.jpg") no-repeat center top;
   color: #000000;
+
+  @media (min-width: $tablet-width) {
+    background: #ffffff url("/img/header/tablet-background.jpg") no-repeat center top;
+  }
+
+  @media (min-width: $desktop-width) {
+    background: #ffffff url("/img/header/desktop-background.jpg") no-repeat center top;
+  }
 }
 
 .page__body-layout {
