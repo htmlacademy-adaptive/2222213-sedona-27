@@ -90,7 +90,7 @@
 }
 
 .hero__title {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   color: #000000;
   font-weight: 700;
   font-size: 18px;
@@ -101,7 +101,7 @@
   padding-bottom: 35px;
 
   @media (min-width: $tablet-width) {
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     color: #000000;
     font-weight: 700;
     font-size: 21px;
@@ -116,7 +116,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     color: #000000;
     font-weight: 700;
     font-size: 21px;
@@ -133,7 +133,7 @@
 
 .hero__description {
   margin: 0;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   color: #333333;
   font-weight: 400;
   font-size: 14px;
@@ -142,7 +142,7 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     color: #333333;
     font-weight: 400;
     font-size: 14px;
@@ -157,7 +157,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     color: #333333;
     font-weight: 400;
     font-size: 14px;
